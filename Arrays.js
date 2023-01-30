@@ -59,6 +59,29 @@ const found2 = myArray6.findLast(x=> x >10);
 console.log(found2);
 
 // Funcion FindLastIndex (itera la matriz en orden inverso y devuelve el índice del primer elemento que satisface la función de prueba proporcionada. Si ningún elemento satisface la función de prueba, se devuelve -1.)
-
 const index2= myArray6.findLastIndex(x=> x >10);
 console.log(index2);
+
+// Funcion Flat (rea una nueva matriz con todos los elementos de sub-array concatenados recursivamente hasta la profundidad especificada.):
+const myArray7= [1,2,3,[4,5]];
+console.log(myArray7.flat());
+
+// Funcion FlatMap(primero mapea cada elemento usando una función de mapeo, luego aplana el resultado en una nueva matriz.):
+const flattened= myArray7.flatMap(x=> x);
+console.log(flattened);
+
+// Funcion forEach(ejecuta la función indicada una vez por cada elemento del array.):
+const myArray8= ["a","b","c","d","a"];
+myArray8.forEach(element=> console.log(element));
+
+// Funcion includes(determina si una matriz incluye un determinado elemento, devuelve true o false según corresponda.):
+console.log(myArray8.includes("a"));
+console.log(myArray8.includes("f"));
+
+// Funcion indexOf (retorna el primer índice en el que se puede encontrar un elemento dado en el array, ó retorna -1 si el elemento no esta presente.):
+console.log(myArray8.indexOf("a"));
+console.log(myArray8.indexOf("a",2));
+
+// Funcion join (une todos los elementos de una matriz (o un objeto similar a una matriz) en una cadena y devuelve esta cadena.):
+const pets = ["gato", "perro", "hamster"];
+console.log(pets.join());
