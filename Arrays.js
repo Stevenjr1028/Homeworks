@@ -12,5 +12,5 @@ console.log(myArray3)
 const numerosvacio = new Array(3);
 const numeros= new Array(1,2,3);
 console.log(numerosvacio, numeros)
-// Funcion copyWithin():
+// Funcion copyWithin( transfiere una copia plana de una sección a otra dentro del mismo array ( o contexto similar ), sin modificar su propiedad length y lo devuelve.):
 console.log(myArray.copyWithin(0,2))
