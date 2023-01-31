@@ -116,3 +116,66 @@ console.log(count);
 console.log(animals);
 
 // Funcion reduce(ejecuta una función reductora sobre cada elemento de un array, devolviendo como resultado un único valor.):
+const myArray11 = [1, 2, 3, 4];
+const initialValue = 0;
+const sumWithInitial = myArray11.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue
+);
+console.log(sumWithInitial);
+
+// Funcion reduceRight(Aplica una función simultáneamente contra un acumulador y cada elemento de un array (de derecha a izquierda) para reducirlo a un único valor.):
+const myArray12 = [[0,1],[2,3],[4,5]];
+const result2 = myArray12.reduceRight((accumulator, currentValue) => accumulator.concat(currentValue));
+console.log(result2);
+
+// Funcion reverse (invierte el orden de los elementos de un array in place. El primer elemento pasa a ser el último y el último pasa a ser el primero.):
+const numbers= ["uno","dos","tres"];
+const reverse = numbers.reverse();
+console.log(reverse);
+
+// Funcion shift (elimina el primer elemento del array y lo retorna. Este método modifica la longitud del array.);
+const myArray13= [1,2,3,4];
+const firstelement = myArray13.shift();
+console.log(myArray13);
+console.log(firstelement);
+
+// Funcion slice(devuelve una copia de una parte del array dentro de un nuevo array empezando por inicio hasta fin (fin no incluido). El array original no se modificará.):
+const name = ["Ana","Luis","Julio","Carlos"];
+console.log(name.slice(2));
+console.log(name.slice(1,3));
+
+// Funcion some ( comprueba si al menos un elemento del array cumple con la condición implementada por la función proporcionada.):
+const myArray14 = [1,2,3,4,5,6,7,9];
+const even = (x)=> x>10;
+console.log(myArray14.some(even));
+
+// Funcion sort ( ordena los elementos de un arreglo (array) localmente y devuelve el arreglo ordenado. La ordenación no es necesariamente estable. ):
+const months = ["Enero","Febrero","Marzo","Abril"];
+months.sort();
+console.log(months);
+
+// Funcion splice (cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos.):
+months.splice(1,0,"Mayo");
+console.log(months);
+
+// Funcion toLocaleString(devuelve una cadena de texto representando los elementos del array. Los elementos son convertidos a texto usando su método toLocaleString y dichos Strings son separados por un caracter específico para la localidad (como una coma para la separación de decimales “,”).):
+const myArray15 = [1, 'a', new Date('31 Ene 2023 14:12:00 UTC')];
+const localeString = myArray15.toLocaleString('en', { timeZone: 'UTC' });
+console.log(localeString);
+
+// Funcion toString(devuelve una cadena de caracteres representando el array especificado y sus elementos.):
+const myArray16 = [1, 2, 'a', '1a'];
+console.log(myArray16.toString());
+
+// Funcion unshift ( agrega uno o más elementos al inicio del array, y devuelve la nueva longitud del array.):
+const myArray17 = [1, 2, 3];
+console.log(myArray17.unshift(4, 5));
+console.log(myArray17);
+
+// Funcion values (devuelve un nuevo objeto Array Iterator que contiene los valores para cada índice del array.)
+const myArray18 = ['a', 'b', 'c'];
+const iterato = myArray18.values();
+for (const value of iterato) {
+  console.log(value);
+}
