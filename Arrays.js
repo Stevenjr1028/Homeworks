@@ -85,3 +85,34 @@ console.log(myArray8.indexOf("a",2));
 // Funcion join (une todos los elementos de una matriz (o un objeto similar a una matriz) en una cadena y devuelve esta cadena.):
 const pets = ["gato", "perro", "hamster"];
 console.log(pets.join());
+
+// Funcion keys(devuelve un nuevo objeto Array Iterator que contiene las claves de índice con las que acceder a cada elemento en el array.):
+const myArray9 = ["a","b","c"];
+const terator = myArray9.keys();
+
+for (const key of terator) {
+    console.log(key)
+}
+
+// Funcion LastIndexOf( devuelve el último índice en el que un cierto elemento puede encontrarse en el arreglo, ó -1 si el elemento no se encontrara. El arreglo es recorrido en sentido contrario, empezando por el índice fromIndex.):
+const consoles = ["PS4","XBOX360","N64","PS4","PS5"];
+console.log(consoles.lastIndexOf("PS4"));
+
+// Funcion map(crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos.):
+const myArray10 = [1,2,3,4,5];
+const map1= myArray10.map(x=> x * 2);
+console.log(map1);
+
+// Funcion pop ( elimina el último elemento de un array y lo devuelve. Este método cambia la longitud del array.):
+const plants = ["papa","tomate","brocoli","pepino"];
+const lastitem = plants.pop();
+console.log(lastitem);
+console.log(plants);
+
+// Funcion push ( añade uno o más elementos al final de un array y devuelve la nueva longitud del array.):
+const animals = ["vaca","pollo","tigre"];
+const count = animals.push("leon");
+console.log(count);
+console.log(animals);
+
+// Funcion reduce(ejecuta una función reductora sobre cada elemento de un array, devolviendo como resultado un único valor.):
